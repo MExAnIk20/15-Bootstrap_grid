@@ -1,4 +1,4 @@
-body, header, ul, h3, h4, h5, hr, span{
+body, header, ul, h3, h4, h5, hr, span, p{
 	margin: 0;
 	padding: 0;
 	font-family: Arial;
@@ -76,11 +76,55 @@ h3, h4{
 }
 button{
 	margin: 20px 0px;
+	border: none;
+	padding: 5px 0px;
+	border-radius: 4px;
 }
 p img{
 	width: 32px;
 	height: 32px;
 }
-.box3 p{
-	border: 1px solid gray;
+.box_1{
+	text-align: right;
+}
+.box_2{
+	text-align: center;
+}
+.box_3{
+	text-align: left;
+}
+.box_1 p, .box_3 p{
+	margin-bottom: 20px;
+}
+.box_2 p{
+	margin-bottom: 12px;
+}
+.box_1 p span{
+	border-left: 1px solid #e8e8e8;
+}
+.box_3 p span{
+	border-right: 1px solid #e8e8e8;
+}
+.box_1 p span, .box_3 p span{
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 5px 15px;
+}
+.box_2 span{
+	font-weight: bold;
+	font-size: 18dpx;
+}
+.box_1 p span::before{
+	content: '';
+	position: absolute;
+	right: 5px;
+	top: 2px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #e8e8e8;
+	border-width: 0 1px 1px 0;
+	transform: rotate(-45deg);
+}
+.active-link{
+	color: #fff;
 }
